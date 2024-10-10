@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const urlController = require('../controllers/urlController');
 
-//Create a shortened URL
+//Create shortened URL
 router.post('/shorten', urlController.createShortUrl);
 
 //Redirected to the original URL
